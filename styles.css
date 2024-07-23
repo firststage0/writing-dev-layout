@@ -1,0 +1,273 @@
+:root {
+  --font-family: "Popins", sans-serif;
+  --second-font-family: "Recursive", sans-serif;
+  --third-font-family: "Source Sans 3", sans-serif;
+  --background-color: #232830;
+  --border-radius: 22px;
+  --button-border-radius: 5px;
+  --button-background: #4699e0;
+  --color: #fff;
+  --second-color: #909090;
+  --card-color: #0f1217;
+}
+
+* {
+  background: var(--background-color);
+  list-style-type: none;
+  color: var(--color);
+  font-family: var(--font-family);
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Recursive";
+  src: "./fonts/Recursive/Recursive-Regular.ttf";
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: "./fonts/Poppins/Poppins-Regular.ttf";
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: "./fonts/Source_Sans_3/SourceSans3-SemiBold.ttf";
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  margin: 75px auto 0 auto;
+  max-width: 1240px;
+
+  max-height: 560px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-size: 30px;
+}
+
+.header-list {
+  display: flex;
+  gap: 36px;
+  font-size: 24px;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  height: 205px;
+  margin-top: 75px;
+}
+
+.title {
+  margin: 56px 0 0 0;
+  font-family: var(--second-font-family);
+  font-style: italic;
+  font-size: 71px;
+  color: #ff7575;
+}
+
+.description {
+  margin: 16px 0 0 0;
+
+  font-size: 29px;
+  color: #fff;
+}
+
+.divider {
+  border: 1px solid #4d4d4d;
+  margin-top: 100px;
+}
+
+.category-container {
+  display: flex;
+  width: 1274px;
+  margin-top: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: flex-start;
+}
+
+.category-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+}
+
+.category-list.icons {
+  display: flex;
+  gap: 13px;
+}
+
+.category-list.icon {
+  width: 22px;
+  height: 22px;
+}
+
+.category-list.item {
+  font: italic 27px var(--second-font-family);
+  color: var(--second-color);
+}
+
+.wrapper {
+  display: grid;
+  justify-content: center;
+  margin-top: 100px;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(3, 477px);
+  gap: 37px;
+}
+
+.wrapper > div {
+  border: 1px solid #252930;
+  border-radius: 22px;
+  background-color: var(--color);
+  padding: 1em;
+  color: #d9480f;
+}
+
+.card > *,
+p {
+  display: flex;
+  background-color: var(--color);
+  color: var(--card-color);
+  margin: 14px;
+  font-family: var(--font-family);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 440px;
+}
+
+.card-image {
+  border-radius: 22px;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.card-description {
+  height: 100px;
+  flex: 1 1 auto;
+}
+
+.card-footer {
+  align-items: center;
+  margin: 0;
+
+  gap: 10px;
+}
+
+.ellipse {
+  height: 4px;
+  width: 4px;
+  border-radius: 100%;
+}
+
+.pages {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.pages-list {
+  display: flex;
+  gap: 45px;
+  align-items: flex-end;
+}
+
+.page-item {
+  display: flex;
+  font: italic 400 25px var(--second-font-family);
+  font-family: var(--second-font-family);
+  color: var(--second-color);
+}
+
+.active {
+  color: #ff7575;
+}
+
+.footer {
+  margin-top: 160px;
+  height: 200px;
+  width: 100%;
+
+  border-top: 3px solid #4d4d4d40;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+  align-items: flex-end;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.left-side {
+  gap: 16px;
+}
+
+.footer-title {
+  font-family: var(--third-font-family);
+  font-size: 30px;
+}
+
+.developer-tag {
+  padding: 6px 13px;
+  background-color: var(--button-background);
+  font-family: var(--third-font-family);
+  font-size: 19px;
+  border-radius: var(--button-border-radius);
+}
+
+.twitter-logo {
+  width: 20px;
+  height: 16px;
+}
+
+.twitter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--button-background);
+  border-radius: var(--button-border-radius);
+  padding: 5px 10px;
+}
+
+.twitter-logo {
+  background-color: var(--button-background);
+}
+
+.twitter-tag {
+  background-color: var(--button-background);
+}
+
+.twitter-tag {
+  font-size: 19px;
+}
